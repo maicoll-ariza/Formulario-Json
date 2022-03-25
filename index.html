@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h2 class="title__form">REGISTRO</h2>
+           <div class="contenedor--form">
+            <div class="contenedor__labels">
+                <label for="name"><input type="text" id="name" placeholder="Ej. Enrique"></label>
+                <label for="lastname"><input type="text" id="lastname" placeholder="Ej. Rodriguez"></label>
+                <label for="id"><input type="number" id="id" placeholder="Ej. 10"></label></div>
+           </div>
+        </form>
+        <div class="buttons">
+            <button onclick="listar()">Listar</button>
+            <button onclick="registrar()">Registrar</button>
+        </div>
+        <table>
+            <thead>
+                <th>nombre</th><th>apellido</th><th>código</th>
+            </thead>
+            <tbody id="cuerpo-registro">
+                <tr><td>Maicoll</td><td>Ariza</td><td>1</td></tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
